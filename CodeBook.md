@@ -33,6 +33,6 @@ The attributes names are similar to the following:
 #####[tbodyacc-std-y],[tbodyacc-std-z],[tgravityacc-mean-x],[tgravityacc-mean-y]
 
 
-The script creates an tidy data set namely "data_set_with_the_averages.txt", It's the result with an average of each measurement for each activity and each subject. 
+The script creates a tidy data set namely "data_set_with_the_averages.txt", It's the result with an average of each measurement for each activity and each subject. 
 
 The first column contains subject IDs, the second column contains activity names , third coloumn are the averages for each of the 66 attributes. There are 30 subjects, 6 activities and 180 rows in this data set with averages.
