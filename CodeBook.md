@@ -24,13 +24,15 @@ It reads activity_labels.txt and applies descriptive activity names to name the 
 
 #####[walking] , [walkingupstairs] , [walkingdownstairs] , [sitting] , [standing] , [laying]
 
-The script labels the data set with descriptive names accordingly with all feature names (attributes) and activity names are converted to lower case, underscores and brackets () are removed. Then it merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs. The result is saved as merged_clean_data.txt, a 10299x68 data frame such that the first column contains subject IDs, the second column activity names, and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
+The script labels the data set with descriptive names accordingly with all feature names (attributes) and activity names are converted to lower case, underscores and brackets are removed. 
+
+It merges the features data frame with the data frames containing activity labels and subject IDs. It's stored as cleaned_merged_data.txt, a data frame where the first column contains subject IDs, the second column activity names, the rest are measurements.
 
 The attributes names are similar to the following:
 #####[tbodyacc-mean-x],[tbodyacc-mean-y],[tbodyacc-mean-z],[tbodyacc-std-x],
 #####[tbodyacc-std-y],[tbodyacc-std-z],[tgravityacc-mean-x],[tgravityacc-mean-y]
 
 
-The script creates an tidy data set namely "data_set_with_the_averages.txt", result with an average of each measurement for each activity and each subject. 
+The script creates a tidy data set namely "data_set_with_the_averages.txt", It's the result with an average of each measurement for each activity and each subject. 
 
 The first column contains subject IDs, the second column contains activity names , third coloumn are the averages for each of the 66 attributes. There are 30 subjects, 6 activities and 180 rows in this data set with averages.
