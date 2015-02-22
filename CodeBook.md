@@ -10,7 +10,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-###Implementation :
+###Implementation:
 
 The run_analysis.R script executes the following to clean up the data:
 
@@ -31,6 +31,6 @@ The attributes names are similar to the following:
 #####[tbodyacc-std-y],[tbodyacc-std-z],[tgravityacc-mean-x],[tgravityacc-mean-y]
 
 
-The script creates an independent tidy data set namely "data_set_with_the_averages.txt", result with an average of each measurement for each activity and each subject. 
+The script creates an tidy data set namely "data_set_with_the_averages.txt", result with an average of each measurement for each activity and each subject. 
 
 The first column contains subject IDs, the second column contains activity names , third coloumn are the averages for each of the 66 attributes. There are 30 subjects, 6 activities and 180 rows in this data set with averages.
